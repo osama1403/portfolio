@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+  scroll-behavior: smooth;
+  --primary:'rgb(0, 183, 255)';
+}
+
+body::-webkit-scrollbar{
+  width: 10px;
+}
+
+
+.hoverbox {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: black;
+
+}
+
+@keyframes dimm {
+  0% {
+    background-color: rgb(0, 183, 255)
+  }
+
+  100% {
+    background-color: black
+  }
+}
+
+
+.noscrollbar::-webkit-scrollbar{
+  display: none;
+}
+
+.shade {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.shadeleft {
+  background: linear-gradient(90deg, #010215, transparent);
+  inset: 0 auto 0 0;
+  width: 70px;
+}
+.shaderight {
+  background: linear-gradient(270deg, #010215, transparent);
+  inset: 0 0 0 auto;
+  width: 70px;
+}
+.shadebottom {
+  background: linear-gradient(0deg, #010215, transparent);
+  inset: auto 0 0 0;
+  height: 70px;
+}
+.shadetop {
+  background: linear-gradient(180deg, #010215, transparent);
+  inset: 0 0 auto 0;
+  height: 70px;
+}
+
+
+.textshadow1{
+  text-shadow: 0px 0px 5px black;
+}
+.textshadow2{
+  text-shadow: 0px 0px 7px black;
+}
+
+
+.breath{
+  animation: breath 1500ms linear infinite  alternate;
+  border-radius: 5px;
+}
+
+.breath:hover{
+  box-shadow: 0px 0px 10px 3px rgb(0, 183, 255);
+}
+
+@keyframes breath {
+  0%{
+    transform: scale(100%);
+  }
+  100%{
+    transform: scale(90%);
+  }
+  
+}
+
+
+.rotate{ 
+  animation: rotate 2s linear infinite;
+ }
+
+.bounce{
+  animation: bounce 1s ease-in-out infinite alternate-reverse;
+}
+
+.hue{
+  box-shadow: 0px 0px 25px 4px rgb(0, 183, 255);
+  animation: hue 2s linear infinite alternate-reverse;
+}
+
+
+@keyframes hue{
+  0% {
+    box-shadow: 0px 0px 20px 3px rgb(0, 183, 255);
+  }
+  100% {
+    box-shadow: 0px 0px 50px 4px rgb(0, 183, 255);
+  }
+}
+
+@keyframes rotate{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce{
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

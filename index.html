@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Osama AboAjeeb</title>
+</head>
+
+<body class="max-w-[1440px] bg-primaryBG m-auto font-Montserrat">
+
+  <nav class="sticky sm:text-lg top-0 h-14 flex justify-center bg-primaryBG bg-opacity-45 backdrop-blur-sm  z-30 ">
+    <a href="#" class="h-full px-2 sm:px-4 flex items-center hover:text-primary text-primary ">Home</a>
+    <a href="#about" class="h-full px-2 sm:px-4 flex items-center  text-white hover:text-primary ">About</a>
+    <a href="#skills" class="h-full px-2 sm:px-4 flex items-center  text-white hover:text-primary ">Skills</a>
+    <a href="#projects" class="h-full px-2 sm:px-4 flex items-center  text-white hover:text-primary ">Projects</a>
+  </nav>
+
+  <header id="home"
+    class="section relative pb-14 px-3 md:px-0 overflow-y-hidden w-full md:h-[calc(100vh-56px)] max-h-[900px] box-border flex justify-center items-center">
+
+    <div class="shade shadeleft"></div>
+    <div class="shade shaderight"></div>
+    <div class="shade shadetop"></div>
+    <div class="shade shadebottom"></div>
+    <div id="squareboard"
+      class="absolute inset-0 bg-blue-900 grid gap-[2px] grid-cols-[repeat(auto-fill,minmax(50px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(70px,1fr))]">
+    </div>
+
+    <div id="headercontent"
+      class="relative w-full md:w-3/4 items-center md:grid grid-cols-5 z-10 bg-opacity-60 bg-blue-950 backdrop-blur-[6px] rounded-3xl pointer-events-none">
+
+      <div
+        class="w-full col-span-3 col-start-1 col-end-4  text-center md:text-left flex flex-col items-center md:items-start  p-10 pt-20 md:pt-10 ">
+        <p class="text-3xl md:text-xl xl:text-3xl w-fit textshadow1 text-white mb-2 pointer-events-auto">Hi I'm</p>
+        <h1 class="text-5xl md:text-4xl xl:text-5xl w-fit textshadow2 text-primary font-bold mb-3 pointer-events-auto">
+          Osama Abo Ajeeb</h1>
+        <p id="rollingtext" class=" text-3xl md:text-xl xl:text-3xl w-fit textshadow1 text-white pointer-events-auto">
+          Web Developer</p>
+
+        <div class="flex justify-center flex-wrap md:justify-start gap-4 mt-8 font-semibold text-white text">
+
+
+          <a href="https://github.com/osama1403" target="_blank"
+            class=" border border-primary hover:bg-primary flex items-center justify-center p-2 rounded-full bg-transparent pointer-events-auto">
+            <img src="assets/svg/github.svg" class="w-7 h-7" alt="">
+          </a>
+          <a href="https://www.linkedin.com/in/osama-aboajeeb/" target="_blank"
+            class=" border border-primary hover:bg-primary flex items-center justify-center p-2 rounded-full bg-transparent pointer-events-auto">
+            <img src="assets/svg/linkedin.svg" class="w-7 h-7" alt="">
+          </a>
+        </div>
+      </div>
+
+      <img src="assets/Images/HeaderImg.png" alt=""
+        class="col-span-2 w-3/4 md:w-full max-w-md m-auto aspect-square p-3 pointer-events-auto hover:scale-105 transition-all duration-300 object-cover">
+    </div>
+
+  </header>
+
+  <section id="about" class="section px-2 py-20 mt-20  ">
+
+    <div class="w-full px-10 max-w-5xl mx-auto items-center gap-10 flex flex-col md:flex-row-reverse">
+      <div class="relative  ">
+
+        <div class="w-full text-center relative md:text-left p-10  bg-primary bg-opacity-15 backdrop-blur-[2px]">
+          <h1 class="text-3xl font-semibold text-primary  ">About me:</h1>
+          <p class=" text-lg  text-zinc-300">
+            Hi, I'm Osama Abo Ajeeb, a passionate and dedicated frontend web developer with a strong desire to create
+            beautiful and user-friendly online experiences, Though my proffesional experience may be limited, I am
+            excited to contribute to a company that values growth and innovation, as it will allow me to further refine
+            my abilities and expand my skill set.
+
+          </p>
+          <div class="mt-4 flex flex-wrap gap-4">
+            <div class="grow">
+              <div>
+                <p class="text-primary text-lg">Name:</p>
+                <p class="text-white ">Osama Abo Ajeeb</p>
+              </div>
+              <div class="mt-4">
+                <p class="text-primary text-lg">Email:</p>
+                <p class="text-white break- break-all">osama.aboajeb333@gmail.com</p>
+              </div>
+            </div>
+            <div class="grow">
+              <div>
+                <p class="text-primary text-lg">Education:</p>
+                <p class="text-white">Degree in Software Engineering</p>
+              </div>
+              <div class="mt-4">
+                <p class="text-primary text-lg">Employment:</p>
+                <p class="text-white ">Open</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="w-16 h-16 breath rounded-xl border border-primary absolute -top-8 -right-8 -z-10"></div>
+        <div class="w-28 h-28 breath rounded-xl border border-primary absolute top-14 -right-8 -z-10"></div>
+        <div class="w-20 h-20 breath rounded-xl border border-primary absolute -bottom-14 left-8 -z-10"></div>
+      </div>
+
+
+      <img src="assets/Images/me.jpg" alt=""
+        class="w-64 mx-auto rounded-xl hover:scale-105 hover:translate-x-2 hover:-translate-y-3 transition-all duration-300 object-cover">
+
+    </div>
+
+  </section>
+
+  <section id="skills" class="section py-20 mt-20 px-4 sm:px-10 ">
+    <h1 class=" text-center text-3xl text-primary bg-blue-200 bg-opacity-10 py-5 font-semibold">Skills</h1>
+
+    <div class="w-full  flex items-start justify-center gap-20 flex-wrap mt-20 ">
+
+      <div class="w-24 breath ">
+        <img src="assets/svg/HTML.svg" alt="" class="w-full aspect-square p-4">
+        <p class="text-center text-primary pt-3 font-medium">HTML</p>
+      </div>
+      <div class="w-24 breath">
+        <img src="assets/svg/css.svg" alt="" class="w-full aspect-square p-4">
+        <p class="text-center text-primary pt-3 font-medium">CSS</p>
+      </div>
+      <div class="w-24 breath">
+        <img src="assets/svg/Js.svg" alt="" class="w-full aspect-square p-4">
+        <p class="text-center text-primary pt-3 font-medium">JS</p>
+      </div>
+      <div class="w-24 breath">
+        <img src="assets/svg/tailwindcss.svg" alt="" class="w-full aspect-square p-4 mx-auto">
+        <p class="text-center text-primary pt-3 font-medium">tailwind css</p>
+      </div>
+      <div class="w-24 breath">
+        <img src="assets/svg/react.svg" alt="" class="w-full aspect-square p-4">
+        <p class="text-center text-primary pt-3 font-medium">React</p>
+      </div>
+      <div class="w-24 breath">
+        <img src="assets/svg/Nodejs.svg" alt="" class="w-full aspect-square p-4">
+        <p class="text-center text-primary pt-3 font-medium">Node js</p>
+      </div>
+      <div class="w-24 breath">
+        <img src="assets/svg/ExpressJs.svg" alt="" class="w-full aspect-square p-4">
+        <p class="text-center text-primary pt-3 font-medium">Express js</p>
+      </div>
+      <div class="w-24 breath">
+        <img src="assets/svg/Mongodb.svg" alt="" class="w-full aspect-square p-4">
+        <p class="text-center text-primary pt-3 font-medium">MongoDB</p>
+      </div>
+      <div class="w-24 breath">
+        <img src="assets/svg/SocketIo.svg" alt="" class="w-full aspect-square p-4">
+        <p class="text-center text-primary pt-3 font-medium">Socket.io</p>
+      </div>
+      <div class="w-24 breath">
+        <img src="assets/svg/git.svg" alt="" class="w-full aspect-square p-4">
+        <p class="text-center text-primary pt-3 font-medium">Git</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects" class="section py-20 mt-20 px-4 sm:px-10">
+
+    <h1 class=" text-center text-3xl text-primary bg-blue-200 bg-opacity-10 py-5 font-semibold">Projects</h1>
+
+    <!-- Multimart -->
+    <div class="mt-20 lg:grid items-center grid-cols-5 w-full max-w-2xl lg:max-w-7xl mx-auto ">
+
+      <div class="p-4 col-span-3 order-2">
+        <div
+          class=" bg-gray-300 bg-opacity-10  text-ceter lg:text-left flex flex-col items-ceter lg:items-start h-full p-7">
+          <h2 class="text-3xl text-primary">Multimart</h2>
+          <div class="p-2 bg-white bg-opacity-10 w-fit mt-4">
+
+            <p class="text-lg  text-white">Full Stack </p>
+            <p class="text-lg mt- text-white">ReactJS, NodeJS, Express, Mongodb </p>
+          </div>
+          <div class="text-lg mt-4 text-white">
+
+            <p>
+              Multimart is a multivendor ecommerce website where multiple sellers can post their products, and users can
+              shop from them. <br>
+              Built using the <strong class="text-primary">MERN</strong> stack. <br>
+              I developed the Frontend using <strong class="text-primary">ReactJS</strong> and <strong
+                class="text-primary">Tailwind CSS</strong>,
+              and implemented the backend using <strong class="text-primary">ExpressJS</strong> and <strong
+                class="text-primary">Mongodb</strong> for the database. <br>
+              with a focus on implementing solid principles to ensure a structured and organized codebase. <br>
+            </p>
+            <p class="mt-2">
+              Key features of the app include:
+            </p>
+            <ul class="list-disc list-inside marker:text-primary pl-4">
+              <li>JWT <span class="text-primary">access</span> and <span class="text-primary">refresh</span> token
+                handling for secure authentication.</li>
+              <li><span class="text-primary">Role management</span> to control user permissions.</li>
+              <li> Real-time <span class="text-primary">chat</span> functionality using Socket.io, enabling
+                communication
+                between customers and sellers.</li>
+              <li> Integration with <span class="text-primary">Stripe</span> payment gateway for secure online
+                transactions.</li>
+            </ul>
+
+          </div>
+          <div class="flex gap-4 mt-10">
+            <a href="https://multimart-7pxm.onrender.com/" target="_blank"
+              class="py-1 px-6 text-primary border rounded-md  border-primary hover:bg-primary hover:text-white flex items-center gap-1">
+              <span>Live</span>
+              <svg width="20px" height="20px" viewBox="0 0 24 24" class="inline" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
+                  <g fill="currentColor" fill-rule="nonzero">
+                    <path
+                      d="M6.34277267,4.93867691 C6.73329697,5.3292012 6.73329697,5.96236618 6.34277267,6.35289047 C3.21757171,9.47809143 3.21757171,14.5450433 6.34277267,17.6702443 C6.73329697,18.0607686 6.73329697,18.6939336 6.34277267,19.0844579 C5.95224838,19.4749821 5.3190834,19.4749821 4.92855911,19.0844579 C1.02230957,15.1782083 1.02230957,8.84492646 4.92855911,4.93867691 C5.3190834,4.54815262 5.95224838,4.54815262 6.34277267,4.93867691 Z M19.0743401,4.93867691 C22.9805896,8.84492646 22.9805896,15.1782083 19.0743401,19.0844579 C18.6838158,19.4749821 18.0506508,19.4749821 17.6601265,19.0844579 C17.2696022,18.6939336 17.2696022,18.0607686 17.6601265,17.6702443 C20.7853275,14.5450433 20.7853275,9.47809143 17.6601265,6.35289047 C17.2696022,5.96236618 17.2696022,5.3292012 17.6601265,4.93867691 C18.0506508,4.54815262 18.6838158,4.54815262 19.0743401,4.93867691 Z M9.3094225,7.81205295 C9.69994679,8.20257725 9.69994679,8.83574222 9.3094225,9.22626652 C7.77845993,10.7572291 7.77845993,13.2394099 9.3094225,14.7703724 C9.69994679,15.1608967 9.69994679,15.7940617 9.3094225,16.184586 C8.91889821,16.5751103 8.28573323,16.5751103 7.89520894,16.184586 C5.58319778,13.8725748 5.58319778,10.1240641 7.89520894,7.81205295 C8.28573323,7.42152866 8.91889821,7.42152866 9.3094225,7.81205295 Z M16.267742,7.81205295 C18.5797531,10.1240641 18.5797531,13.8725748 16.267742,16.184586 C15.8772177,16.5751103 15.2440527,16.5751103 14.8535284,16.184586 C14.4630041,15.7940617 14.4630041,15.1608967 14.8535284,14.7703724 C16.384491,13.2394099 16.384491,10.7572291 14.8535284,9.22626652 C14.4630041,8.83574222 14.4630041,8.20257725 14.8535284,7.81205295 C15.2440527,7.42152866 15.8772177,7.42152866 16.267742,7.81205295 Z M12.0814755,10.5814755 C12.9099026,10.5814755 13.5814755,11.2530483 13.5814755,12.0814755 C13.5814755,12.9099026 12.9099026,13.5814755 12.0814755,13.5814755 C11.2530483,13.5814755 10.5814755,12.9099026 10.5814755,12.0814755 C10.5814755,11.2530483 11.2530483,10.5814755 12.0814755,10.5814755 Z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a href="https://github.com/osama1403/multimart" target="_blank"
+              class="py-1 px-6 text-primary border rounded-md  border-primary hover:bg-primary hover:text-white flex items-center gap-1">
+              <span>Github</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="inline" height="18px" aria-hidden="true"
+                viewBox="0 0 16 16" version="1.1" width="18px" data-view-component="true" fill="currentColor"
+                class="octicon octicon-mark-github">
+                <path
+                  d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <img src="assets/Images/multimart.jpg" class="p-4 col-span-2 w-full aspect-[5/4]  object-cover rouned-xl order-1">
+
+
+    </div>
+
+    <!-- Delish -->
+    <div class="mt-20 lg:grid items-center grid-cols-5 w-full max-w-2xl lg:max-w-7xl mx-auto ">
+
+      <div class="p-4 col-span-3 order-1">
+        <div
+          class=" bg-gray-300 bg-opacity-10  text-ceter lg:text-left flex flex-col items-ceter lg:items-start h-full p-7">
+          <h2 class="text-3xl text-primary">Delish</h2>
+          <div class="p-2 bg-white bg-opacity-10 w-fit mt-4">
+
+            <p class="text-lg  text-white">Frontend </p>
+            <p class="text-lg mt- text-white">HTML, CSS, JavaScript, Tailwind CSS</p>
+          </div>
+          <div class="text-lg mt-4 text-white">
+
+            <p>
+              Delish is a responsive and visually appealing restaurant website,<br>
+              I Developed it using HTML, CSS, JavaScript, and Tailwind CSS
+            </p>
+
+            <p class="mt-2">
+              Key features of the app include:
+            </p>
+            <ul class="list-disc list-inside marker:text-primary pl-4">
+              <li>Implemented responsive design principles to ensure optimal user experience across different devices.
+              </li>
+              <li> Optimized website performance and speed through images lazy loading with thumbnails technique and
+                efficient coding practices.</li>
+            </ul>
+
+          </div>
+          <div class="flex gap-4 mt-10">
+            <a href="https://osama1403.github.io/Delish/" target="_blank"
+              class="py-1 px-6 text-primary border rounded-md  border-primary hover:bg-primary hover:text-white flex items-center gap-1">
+              <span>Live</span>
+              <svg width="20px" height="20px" viewBox="0 0 24 24" class="inline" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
+                  <g fill="currentColor" fill-rule="nonzero">
+                    <path
+                      d="M6.34277267,4.93867691 C6.73329697,5.3292012 6.73329697,5.96236618 6.34277267,6.35289047 C3.21757171,9.47809143 3.21757171,14.5450433 6.34277267,17.6702443 C6.73329697,18.0607686 6.73329697,18.6939336 6.34277267,19.0844579 C5.95224838,19.4749821 5.3190834,19.4749821 4.92855911,19.0844579 C1.02230957,15.1782083 1.02230957,8.84492646 4.92855911,4.93867691 C5.3190834,4.54815262 5.95224838,4.54815262 6.34277267,4.93867691 Z M19.0743401,4.93867691 C22.9805896,8.84492646 22.9805896,15.1782083 19.0743401,19.0844579 C18.6838158,19.4749821 18.0506508,19.4749821 17.6601265,19.0844579 C17.2696022,18.6939336 17.2696022,18.0607686 17.6601265,17.6702443 C20.7853275,14.5450433 20.7853275,9.47809143 17.6601265,6.35289047 C17.2696022,5.96236618 17.2696022,5.3292012 17.6601265,4.93867691 C18.0506508,4.54815262 18.6838158,4.54815262 19.0743401,4.93867691 Z M9.3094225,7.81205295 C9.69994679,8.20257725 9.69994679,8.83574222 9.3094225,9.22626652 C7.77845993,10.7572291 7.77845993,13.2394099 9.3094225,14.7703724 C9.69994679,15.1608967 9.69994679,15.7940617 9.3094225,16.184586 C8.91889821,16.5751103 8.28573323,16.5751103 7.89520894,16.184586 C5.58319778,13.8725748 5.58319778,10.1240641 7.89520894,7.81205295 C8.28573323,7.42152866 8.91889821,7.42152866 9.3094225,7.81205295 Z M16.267742,7.81205295 C18.5797531,10.1240641 18.5797531,13.8725748 16.267742,16.184586 C15.8772177,16.5751103 15.2440527,16.5751103 14.8535284,16.184586 C14.4630041,15.7940617 14.4630041,15.1608967 14.8535284,14.7703724 C16.384491,13.2394099 16.384491,10.7572291 14.8535284,9.22626652 C14.4630041,8.83574222 14.4630041,8.20257725 14.8535284,7.81205295 C15.2440527,7.42152866 15.8772177,7.42152866 16.267742,7.81205295 Z M12.0814755,10.5814755 C12.9099026,10.5814755 13.5814755,11.2530483 13.5814755,12.0814755 C13.5814755,12.9099026 12.9099026,13.5814755 12.0814755,13.5814755 C11.2530483,13.5814755 10.5814755,12.9099026 10.5814755,12.0814755 C10.5814755,11.2530483 11.2530483,10.5814755 12.0814755,10.5814755 Z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a href="https://github.com/osama1403/Delish" target="_blank"
+              class="py-1 px-6 text-primary border rounded-md  border-primary hover:bg-primary hover:text-white flex items-center gap-1">
+              <span>Github</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="inline" height="18px" aria-hidden="true"
+                viewBox="0 0 16 16" version="1.1" width="18px" data-view-component="true" fill="currentColor"
+                class="octicon octicon-mark-github">
+                <path
+                  d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <img src="assets/Images/delish.jpg" class="p-4 col-span-2 order-2 w-full aspect-[5/4]  object-cover rouned-xl ">
+
+
+    </div>
+
+    <!-- MemoryGame -->
+    <div class="mt-20 lg:grid items-center grid-cols-5 w-full max-w-2xl lg:max-w-7xl mx-auto ">
+
+      <div class="p-4 col-span-3 order-2">
+        <div
+          class=" bg-gray-300 bg-opacity-10  text-ceter lg:text-left flex flex-col items-ceter lg:items-start h-full p-7">
+          <h2 class="text-3xl text-primary">Memory Game</h2>
+          <div class="p-2 bg-white bg-opacity-10 w-fit mt-4">
+
+            <p class="text-lg  text-white">Frontend</p>
+            <p class="text-lg mt- text-white">ReactJS, Tailwind CSS</p>
+          </div>
+          <div class="text-lg mt-4 text-white">
+
+            <p>
+              I developed a web-based memory game using ReactJS, showcasing my front-end development skills and ability
+              to create interactive user interfaces.
+            </p>
+
+            <p class="mt-2">
+              Key features of the app include:
+            </p>
+            <ul class="list-disc list-inside marker:text-primary pl-4">
+              <li>Fully functional memory game using ReactJS and Vite, allowing users to test their memory and
+                concentration skills </li>
+              <li> Utilized React hooks and state management to handle game logic, including card flipping, matching,
+                and scoring.</li>
+              <li> Three difficulty levels for increased challenge.</li>
+              <li> Multiple card sets for more enjoyable experience</li>
+            </ul>
+
+          </div>
+          <div class="flex gap-4 mt-10">
+            <a href="https://memory-game-djft.onrender.com/" target="_blank"
+              class="py-1 px-6 text-primary border rounded-md  border-primary hover:bg-primary hover:text-white flex items-center gap-1">
+              <span>Live</span>
+              <svg width="20px" height="20px" viewBox="0 0 24 24" class="inline" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
+                  <g fill="currentColor" fill-rule="nonzero">
+                    <path
+                      d="M6.34277267,4.93867691 C6.73329697,5.3292012 6.73329697,5.96236618 6.34277267,6.35289047 C3.21757171,9.47809143 3.21757171,14.5450433 6.34277267,17.6702443 C6.73329697,18.0607686 6.73329697,18.6939336 6.34277267,19.0844579 C5.95224838,19.4749821 5.3190834,19.4749821 4.92855911,19.0844579 C1.02230957,15.1782083 1.02230957,8.84492646 4.92855911,4.93867691 C5.3190834,4.54815262 5.95224838,4.54815262 6.34277267,4.93867691 Z M19.0743401,4.93867691 C22.9805896,8.84492646 22.9805896,15.1782083 19.0743401,19.0844579 C18.6838158,19.4749821 18.0506508,19.4749821 17.6601265,19.0844579 C17.2696022,18.6939336 17.2696022,18.0607686 17.6601265,17.6702443 C20.7853275,14.5450433 20.7853275,9.47809143 17.6601265,6.35289047 C17.2696022,5.96236618 17.2696022,5.3292012 17.6601265,4.93867691 C18.0506508,4.54815262 18.6838158,4.54815262 19.0743401,4.93867691 Z M9.3094225,7.81205295 C9.69994679,8.20257725 9.69994679,8.83574222 9.3094225,9.22626652 C7.77845993,10.7572291 7.77845993,13.2394099 9.3094225,14.7703724 C9.69994679,15.1608967 9.69994679,15.7940617 9.3094225,16.184586 C8.91889821,16.5751103 8.28573323,16.5751103 7.89520894,16.184586 C5.58319778,13.8725748 5.58319778,10.1240641 7.89520894,7.81205295 C8.28573323,7.42152866 8.91889821,7.42152866 9.3094225,7.81205295 Z M16.267742,7.81205295 C18.5797531,10.1240641 18.5797531,13.8725748 16.267742,16.184586 C15.8772177,16.5751103 15.2440527,16.5751103 14.8535284,16.184586 C14.4630041,15.7940617 14.4630041,15.1608967 14.8535284,14.7703724 C16.384491,13.2394099 16.384491,10.7572291 14.8535284,9.22626652 C14.4630041,8.83574222 14.4630041,8.20257725 14.8535284,7.81205295 C15.2440527,7.42152866 15.8772177,7.42152866 16.267742,7.81205295 Z M12.0814755,10.5814755 C12.9099026,10.5814755 13.5814755,11.2530483 13.5814755,12.0814755 C13.5814755,12.9099026 12.9099026,13.5814755 12.0814755,13.5814755 C11.2530483,13.5814755 10.5814755,12.9099026 10.5814755,12.0814755 C10.5814755,11.2530483 11.2530483,10.5814755 12.0814755,10.5814755 Z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a href="https://github.com/osama1403/MemoryGame" target="_blank"
+              class="py-1 px-6 text-primary border rounded-md  border-primary hover:bg-primary hover:text-white flex items-center gap-1">
+              <span>Github</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="inline" height="18px" aria-hidden="true"
+                viewBox="0 0 16 16" version="1.1" width="18px" data-view-component="true" fill="currentColor"
+                class="octicon octicon-mark-github">
+                <path
+                  d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <img src="assets/Images/memorygame.jpg"
+        class="p-4 col-span-2 order-1 w-full aspect-[5/4]  object-cover rouned-xl ">
+
+
+    </div>
+
+  </section>
+
+  <section class="section py-20 my-20 px-4 sm:px-10">
+    <h1 class=" text-center text-3xl text-primary font-semibold">Tell me your opinion</h1>
+
+    <form id="submitForm" autocomplete="off" class="mt-6 mx-auto w-full max-w-xl">
+      <p class="text-white">Name:</p>
+      <input type="text" id="name"
+        class="w-full text-lg font-thin  bg-blue-200 bg-opacity-15 outline-none  px-2 py-1 text-white ">
+      <p id="nameAlert" class="text-sm text-red-500 hidden">please provide your name</p>
+
+      <p class="text-white mt-2">Email:</p>
+      <input type="email" id="email"
+        class="w-full text-lg font-thin bg-blue-200 bg-opacity-15 outline-none  px-2 py-1 text-white ">
+      <p id="emailAlert" class="text-sm text-red-600 hidden">please provide your email</p>
+
+      <p class="text-white mt-3">your message:</p>
+      <textarea name="" id="message" rows="5" placeholder="your message"
+        class="w-full text-lg font-thin noscrollbar resize-none mt-4 md:mt-0  bg-blue-200 bg-opacity-15  outline-none  px-2 py-1 text-white"> </textarea>
+      <p id="messageAlert" class="text-sm text-red-600 hidden">please write your message</p>
+
+      <button type="submit"
+        class="mx-auto mt-2 outline-none bg-primary bg-opacity-50 text-white rounded-full hover:bg-opacity-100 flex items-center justify-center w-36 py-2 "><span>send</span></button>
+    </form>
+
+  </section>
+
+  <footer class="h-32 overflow-hidden relative w-full  pt-20 box-content">
+    <div class="bounce absolute top-20 left-8 ">
+      <div class="rotate w-16 h-16 border border-primary "></div>
+    </div>
+    <div class="bounce absolute top-20 right-1/3 ">
+      <div class="rotate w-20 h-20 border border-primary "></div>
+    </div>
+    <div class="bounce absolute top-20 right-11 ">
+      <div class="rotate w-10 h-10 border border-primary "></div>
+    </div>
+    <div class="bounce absolute top-20 left-1/3 ani">
+      <div class="rotate w-10 h-10 border border-primary "></div>
+    </div>
+
+
+
+
+    <div class="absolute hue rotate-45 bg-primary w-20 h-20 left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2"></div>
+    <div class="absolute hue rotate-45 bg-primary w-12 h-12 left-1/2 bottom-0 translate-x-12 translate-y-1/2"></div>
+    <div class="absolute hue rotate-45 bg-primary w-12 h-12 left-1/2 bottom-0 -translate-x-24 translate-y-1/2"></div>
+
+  </footer>
+
+
+
+
+
+
+
+  <!-- <section style="min-height: 800px; color: var(--color);">sss</section> -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
