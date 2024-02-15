@@ -2114,6 +2114,11 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-blue-200{
   --tw-bg-opacity: 1;
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
@@ -2618,6 +2623,10 @@ video {
   -moz-osx-font-smoothing: auto;
 }
 
+.opacity-0{
+  opacity: 0;
+}
+
 .bg-blend-normal{
   background-blend-mode: normal;
 }
@@ -2898,6 +2907,14 @@ video {
 
 .duration-300{
   transition-duration: 300ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
+}
+
+.duration-1000{
+  transition-duration: 1000ms;
 }
 
 .ease-in{

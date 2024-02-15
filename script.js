@@ -1,4 +1,11 @@
 const squareboard = document.getElementById('squareboard')
+squareboard.classList.add('bg-blue-900')
+const img = document.querySelector('#headercontent>img')
+if (img.complete) {
+  img.classList.remove('opacity-0')
+} else {
+  img.addEventListener('load', (e) => { e.target.classList.remove('opacity-0') })
+}
 
 const createhoverboxes = (x) => {
   const boxes = []
@@ -124,9 +131,8 @@ window.onscroll = () => {
         if (id === 'home' && el.getAttribute('href') === '#') {
           el.classList.remove('text-white')
           el.classList.add('text-primary')
-        } else {
-          if (el.getAttribute('href') === `#${id}`)
-            el.classList.remove('text-white')
+        } else if (el.getAttribute('href') === `#${id}`) {
+          el.classList.remove('text-white')
           el.classList.add('text-primary')
         }
       })
@@ -161,12 +167,12 @@ function updateFormStatus(s) {
     submitButtonText.innerHTML = 'sending'
   } else if (s === 'SENT') {
     formStatus = s
-    submitButton.classList.remove('bg-primary','bg-opacity-50')
+    submitButton.classList.remove('bg-primary', 'bg-opacity-50')
     submitButton.classList.add('bg-green-500')
     submitButtonText.innerHTML = 'sent'
-  }else if(s==='RETRY'){
+  } else if (s === 'RETRY') {
     formStatus = s
-    submitButton.classList.remove('bg-primary','bg-opacity-50')
+    submitButton.classList.remove('bg-primary', 'bg-opacity-50')
     submitButton.classList.add('bg-yellow-500')
     submitButtonText.innerHTML = '! retry'
   }
@@ -199,20 +205,20 @@ const sendMail = async () => {
   }
 
 
-    updateFormStatus('SENDING')   
-    const res = await Email.send({
-      SecureToken: "6e24c9b9-1a71-4864-8bbb-c67bb43dff4b",
-      To: 'osama.aboajeb333@gmail.com',
-      From: "osama.aboajeb333@gmail.com",
-      Subject: "Protfolio Message",
-      Body: `From: ${name} <br> Email: ${email} <br> Message: ${message} `
-    })
-    console.log(res);
-    if(res === 'OK'){
-      updateFormStatus('SENT')
-    }else{
-      updateFormStatus('RETRY')
-    }
+  updateFormStatus('SENDING')
+  const res = await Email.send({
+    SecureToken: "6e24c9b9-1a71-4864-8bbb-c67bb43dff4b",
+    To: 'osama.aboajeb333@gmail.com',
+    From: "osama.aboajeb333@gmail.com",
+    Subject: "Protfolio Message",
+    Body: `From: ${name} <br> Email: ${email} <br> Message: ${message} `
+  })
+  console.log(res);
+  if (res === 'OK') {
+    updateFormStatus('SENT')
+  } else {
+    updateFormStatus('RETRY')
+  }
 
 }
 
